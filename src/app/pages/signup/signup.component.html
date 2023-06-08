@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+          <mat-card>
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center">Regester Here</h1>
+                <!-- {{user|json}} -->
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field class="full-witdh" appearance="outline" >
+                          <mat-label>User Name</mat-label>
+                          <input 
+                          [(ngModel)]="user.username"  
+                          name =username
+                          matInput placeholder="Ajay123" >
+                        </mat-form-field>
+                      
+                        <mat-form-field class="full-witdh" appearance="outline">
+                          <mat-label>Password</mat-label>
+                          <input [(ngModel)]="user.password" name =password matInput placeholder="*****">
+                         </mat-form-field>
+
+                        <mat-form-field class="full-witdh" appearance="outline">
+                            <mat-label>First Name</mat-label>
+                            <input [(ngModel)]="user.firstName" name =firstName matInput placeholder="Aj">
+                          </mat-form-field>
+
+                          <mat-form-field class="full-witdh" appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input [(ngModel)]="user.lastName" name =lastName matInput placeholder="rana">
+                          </mat-form-field>
+
+                          <mat-form-field class="full-witdh" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input [(ngModel)]="user.email" name =email matInput placeholder="aj@123.gmail">
+                          </mat-form-field>
+
+                          <mat-form-field class="full-witdh" appearance="outline">
+                            <mat-label>Phone No</mat-label>
+                            <input [(ngModel)]="user.phone" name =phone matInput placeholder="1234567890">
+                          </mat-form-field>
+
+                          <button mat-raised-button type="submit" color="warn" class="full-witdh">Submit</button>
+                      </form>
+                      
+                    </div>
+                  </mat-card>
+                  </div>
+    </div>
+</div>
